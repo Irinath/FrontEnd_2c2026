@@ -5,25 +5,25 @@
 >>
 Checklist - Práctica Formativa Obligatoria 1
 • Estructura del Proyecto:
-[ ] Archivo "index.html" ubicado en la raíz.
-[ ] Carpeta "css" que contenga el archivo "styles.css".
-[ ] (Opcional) Carpeta "img" para recursos gráficos.
+[v] Archivo "index.html" ubicado en la raíz.
+[v] Carpeta "css" que contenga el archivo "styles.css".
+[v] (Opcional) Carpeta "img" para recursos gráficos.
 [ ] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.
 • Repositorio y Publicación:
-[ ] Repositorio en GitHub creado.
-[ ] Proyecto subido al repositorio.
+[v] Repositorio en GitHub creado.
+[v] Proyecto subido al repositorio.
 [ ] Proyecto publicado utilizando GitHub Pages.
 [ ] En el "README.md" se indica la URL de GitHub Pages.
 • Uso de Google Fonts:
-[ ] Enlace a Google Fonts incluido en la sección "head" del HTML.
+[v] Enlace a Google Fonts incluido en la sección "head" del HTML.
 [ ] La tipografía importada se aplica en el sitio.
 [ ] Redacta brevemente tu decisión: ¿Por qué elegiste esa fuente?
 Respuesta: __________________________________________________________
 • HTML:
-< 4 de 6 >[ ] El documento inicia con la declaración DOCTYPE y usa el atributo lang="es".
-[ ] Se han incluido las metaetiquetas obligatorias: charset y viewport.
-[ ] Se ha definido un título descriptivo.
-[ ] Se han vinculado correctamente el archivo CSS y el enlace a Google Fonts.
+[v] El documento inicia con la declaración DOCTYPE y usa el atributo lang="es".
+[v] Se han incluido las metaetiquetas obligatorias: charset y viewport.
+[v] Se ha definido un título descriptivo.
+[v] Se han vinculado correctamente el archivo CSS y el enlace a Google Fonts.
 Secciones obligatorias en "main":
 [ ] Barra de navegación ("nav") presente y contiene al menos 3 enlaces.
 [ ] Se han insertado al menos 4 comentarios explicativos en el código HTML.
