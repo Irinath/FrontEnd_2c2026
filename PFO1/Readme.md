@@ -18,7 +18,7 @@ En este proyecto demostraremos la habilidad para darle formato y diseño a nuest
 
 • Estructura del Proyecto:
 
-- [ ] Archivo "index.html" ubicado en la raíz.
+- [x] Archivo "index.html" ubicado en la raíz.
 - [x] Carpeta "css" que contenga el archivo "styles.css".
 - [x] (Opcional) Carpeta "img" para recursos gráficos.
 - [x] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.
@@ -33,9 +33,9 @@ En este proyecto demostraremos la habilidad para darle formato y diseño a nuest
 • Uso de Google Fonts:
 
 - [x] Enlace a Google Fonts incluido en la sección "head" del HTML.
-- [ ] La tipografía importada se aplica en el sitio.
-- [ ] Redacta brevemente tu decisión: ¿Por qué elegiste esa fuente?\
-      - Respuesta: __________________________________________________________  
+- [x] La tipografía importada se aplica en el sitio.
+- [x] Redacta brevemente tu decisión: ¿Por qué elegiste esa fuente?\
+      - Respuesta: ____Me gustó la combinación con el sitio y su lectura fácil.  
 
 • HTML:
 
@@ -44,7 +44,7 @@ En este proyecto demostraremos la habilidad para darle formato y diseño a nuest
 - [x] Se ha definido un título descriptivo.
 - [x] Se han vinculado correctamente el archivo CSS y el enlace a Google Fonts.  
 Secciones obligatorias en "main":
-- [ ] Barra de navegación ("nav") presente y contiene al menos 3 enlaces.
+- [x] Barra de navegación ("nav") presente y contiene al menos 3 enlaces.
 - [ ] Se han insertado al menos 4 comentarios explicativos en el código HTML.  
 
 • CSS:

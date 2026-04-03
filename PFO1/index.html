@@ -5,24 +5,291 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Google Fonts: Expletus Sans (body), Spinnaker (headings), Fuzzy Bubbles (decorativo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Fuzzy+Bubbles:wght@400;700&family=Spinnaker&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
     <title>PFO1 Frontend 2c2026</title>
 </head>
 
 <body>
-    <header>
-        <img src="./img/Logo.png" alt="Ave fenix naranja" width="64" height="64" title="logo de ave fenix color naranja">
-        <h1 class="titulo-principal">Mi Página Web</h1>
-    </header>
-    <nav></nav>
-    <div>
-        <main></main>
+    <header class="site-header">
+         <div class="header-inner">
+      <!-- span class="logo">VT<span class="logo-dot">.</span></!-->
+       <h2 class="h2header-tagline"> Mi portfolio </h2>
+       <br>
+      <p class="header-tagline"> <strong>Práctica Formativa Obligatoria</strong> <br>
+        Front End c2_2026 <br>
+            Comisión D</p>
     </div>
-    <footer></footer>
+        <div class="header-deco" aria-hidden="true">
+            <span class="deco-circle c1"></span>
+            <span class="deco-circle c2"></span>
+            <span class="deco-circle c3"></span>
+        </div>
+    </header>
+
+    <!-- =============================
+       NAV: Barra de navegación principal
+       Mejora futura: convertir en menú hamburguesa para mobile
+  ============================== -->
+    <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="navbar">
+            <li><a href="#" class="nav-link">Inicio</a></li>
+            <li><a href="#about" class="nav-link">Sobre mí</a></li>
+            <li><a href="#proyects" class="nav-link">Proyectos</a></li>
+            <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            <li><a href="#películas" class="nav-link">Mis películas favoritas</a></li>
+            <li><a href="#libros" class="nav-link">Libros recomendados</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!--  MAIN: Contenido principal del portafolio -->
+    <main>
+        <!-- Sección: Presentación Personal -->
+        <section id="sobre-mi" class="section sobre-mi-section">
+            <div class="sobre-mi-content">
+                <div class="sobre-mi-text">
+                    <h1 class="section-title">Hola, soy <span class="highlight">Valeria Thomas</span></h1>
+                    <p class="sobre-mi-desc">
+                        Soy desarrolladora Fullstack con pasión por construir experiencias digitales que combinen
+                        funcionalidad y diseño. Me interesa el desarrollo web moderno, la accesibilidad y crear
+                        interfaces que las personas disfruten usar. Mi misión es crecer como profesional mientras
+                        construyo soluciones que tengan un impacto real.
+                    </p>
+                    <a href="#contacto" class="btn-primary">Contactame</a>
+                </div>
+                <div class="sobre-mi-img-wrap">
+                    <!-- Imagen de perfil: podés reemplazarla por tu foto o avatar -->
+                     <img src="./img/Gemini_Generated_Image_7jhzcu7jhzcu7jhz.png" alt="avatar estilo steam punk retro" width="80"
+            height="64" title="avatar de mujer estilo steampunk retro" class="avatar-img">
+                   
+                    <div class="avatar-placeholder" style="display:none;" aria-hidden="true">
+                        <span>VT</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================
+         Sección: Proyectos (Tarjetas)
+         Mejora futura: agregar filtros por tecnología
+    ============================== -->
+        <section id="tarjetas" class="section tarjetas-section">
+            <h2 class="section-title centered">Proyectos</h2>
+            <p class="section-subtitle centered">Algunos de los trabajos en los que estuve trabajando</p>
+            <div class="tarjetas-grid">
+
+                <article class="tarjeta">
+                    <div class="tarjeta-img-wrap">
+                        <img src="img/proyecto1.png" alt="Captura del proyecto E-commerce App" class="tarjeta-img"
+                            onerror="this.parentElement.classList.add('img-fallback')" />
+                        <span class="tarjeta-tag">Fullstack</span>
+                    </div>
+                    <div class="tarjeta-body">
+                        <h3 class="tarjeta-title">E-commerce App</h3>
+                        <p class="tarjeta-desc">Tienda online con carrito de compras, autenticación de usuarios y panel
+                            de administración. Stack: React, Node.js, MongoDB.</p>
+                        <a href="#" class="tarjeta-link">Ver proyecto →</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-img-wrap">
+                        <img src="img/proyecto2.png" alt="Captura del proyecto Task Manager" class="tarjeta-img"
+                            onerror="this.parentElement.classList.add('img-fallback')" />
+                        <span class="tarjeta-tag">Frontend</span>
+                    </div>
+                    <div class="tarjeta-body">
+                        <h3 class="tarjeta-title">Task Manager</h3>
+                        <p class="tarjeta-desc">Aplicación de gestión de tareas con drag & drop, etiquetas y
+                            prioridades. Diseñada con accesibilidad en mente.</p>
+                        <a href="#" class="tarjeta-link">Ver proyecto →</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-img-wrap">
+                        <img src="img/proyecto3.png" alt="Captura del proyecto API REST" class="tarjeta-img"
+                            onerror="this.parentElement.classList.add('img-fallback')" />
+                        <span class="tarjeta-tag">Backend</span>
+                    </div>
+                    <div class="tarjeta-body">
+                        <h3 class="tarjeta-title">API REST</h3>
+                        <p class="tarjeta-desc">API RESTful documentada con Swagger, autenticación JWT, paginación y
+                            filtros avanzados. Construida con Express y PostgreSQL.</p>
+                        <a href="#" class="tarjeta-link">Ver proyecto →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Sección: Habilidades -->
+        <section id="habilidades" class="section habilidades-section">
+            <h2 class="section-title centered">Habilidades</h2>
+            <p class="section-subtitle centered">Tecnologías, herramientas y otras cosas que me apasionan</p>
+            <div class="habilidades-wrap">
+
+                <div class="habilidades-col">
+                    <h3 class="habilidades-col-title">💻 Tecnologías que manejo</h3>
+                    <ul class="habilidades-list">
+                        <li class="habilidad-item"><span class="habilidad-badge badge-primary">HTML5</span></li>
+                        <li class="habilidad-item"><span class="habilidad-badge badge-primary">CSS3</span></li>
+                        <li class="habilidad-item"><span class="habilidad-badge badge-primary">JavaScript</span></li>
+                        <li class="habilidad-item"><span class="habilidad-badge badge-primary">React</span></li>
+                        <li class="habilidad-item"><span class="habilidad-badge badge-primary">Node.js</span></li>
+                        <li class="habilidad-item"><span class="habilidad-badge badge-primary">SQL</span></li>
+                    </ul>
+                </div>
+
+                <div class="habilidades-col">
+                    <h3 class="habilidades-col-title">📚 Quiero aprender</h3>
+                    <ul class="habilidades-list">
+                        <li class="habilidad-item"><span class="habilidad-badge badge-secondary">TypeScript</span></li>
+                        <li class="habilidad-item"><span class="habilidad-badge badge-secondary">Docker</span></li>
+                        <li class="habilidad-item"><span class="habilidad-badge badge-secondary">Next.js</span></li>
+                        <li class="habilidad-item"><span class="habilidad-badge badge-secondary">GraphQL</span></li>
+                    </ul>
+                </div>
+
+                <div class="habilidades-col">
+                    <h3 class="habilidades-col-title">🎨 Hobbies</h3>
+                    <ul class="habilidades-list">
+                        <li class="habilidad-item"><span class="habilidad-badge badge-accent">Diseño gráfico</span></li>
+                        <li class="habilidad-item"><span class="habilidad-badge badge-accent">Lectura</span></li>
+                        <li class="habilidad-item"><span class="habilidad-badge badge-accent">Música</span></li>
+                        <li class="habilidad-item"><span class="habilidad-badge badge-accent">Gaming</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección: Formulario de Contacto -->
+        <section id="contacto" class="section contacto-section">
+            <h2 class="section-title centered">Contacto</h2>
+            <p class="section-subtitle centered">¿Tenés un proyecto en mente? ¡Hablemos!</p>
+            <form class="contacto-form" action="#" method="POST" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" class="form-input" placeholder="Tu apellido"
+                            required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" class="form-input"
+                            placeholder="+54 11 0000-0000" />
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" class="form-input form-textarea"
+                        placeholder="Contame sobre tu proyecto..." rows="4"></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn-primary btn-submit">Enviar mensaje</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- =============================
+         Sección: Películas Favoritas
+         Mejora futura: traer ratings de una API de películas
+    ============================== -->
+        <section id="peliculas" class="section peliculas-section">
+            <h2 class="section-title centered">Mis Películas Favoritas</h2>
+            <p class="section-subtitle centered">Las tres películas que nunca me canso de recomendar</p>
+            <div class="peliculas-grid">
+
+                <article class="pelicula-card">
+                    <div class="pelicula-img-wrap">
+                        <img src="img/pelicula1.jpg" alt="Póster de Eternal Sunshine of the Spotless Mind"
+                            class="pelicula-img" onerror="this.parentElement.classList.add('img-fallback')" />
+                        <span class="pelicula-num">01</span>
+                    </div>
+                    <div class="pelicula-info">
+                        <h3 class="pelicula-title">Eternal Sunshine of the Spotless Mind</h3>
+                        <p class="pelicula-desc">Una película que mezcla ciencia ficción y romance de una manera que te
+                            hace pensar en los recuerdos, el amor y lo que elegiríamos olvidar.</p>
+                    </div>
+                </article>
+
+                <article class="pelicula-card">
+                    <div class="pelicula-img-wrap">
+                        <img src="img/pelicula2.jpg" alt="Póster de Interstellar" class="pelicula-img"
+                            onerror="this.parentElement.classList.add('img-fallback')" />
+                        <span class="pelicula-num">02</span>
+                    </div>
+                    <div class="pelicula-info">
+                        <h3 class="pelicula-title">Interstellar</h3>
+                        <p class="pelicula-desc">Una épica que combina ciencia real con emoción pura. La relación entre
+                            padre e hija a través del tiempo y el espacio me resulta imposible de olvidar.</p>
+                    </div>
+                </article>
+
+                <article class="pelicula-card">
+                    <div class="pelicula-img-wrap">
+                        <img src="img/pelicula3.jpg" alt="Póster de The Grand Budapest Hotel" class="pelicula-img"
+                            onerror="this.parentElement.classList.add('img-fallback')" />
+                        <span class="pelicula-num">03</span>
+                    </div>
+                    <div class="pelicula-info">
+                        <h3 class="pelicula-title">The Grand Budapest Hotel</h3>
+                        <p class="pelicula-desc">Wes Anderson en su máxima expresión: paleta de colores impecable, humor
+                            delirante y una historia que se construye como una matrioska visual.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        < </main>
+
+
+            <!-- =============================
+       FOOTER: Pie de página con redes sociales
+       Mejora futura: agregar animación de scroll-to-top
+  ============================== -->
+            <footer class="site-footer">
+                <p>Hecho con 💙 por Valeria Thomas · 2026 </p>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-x"></i>
+                <i class="fab fa-discord"></i>
+                <i class="fab fa-whatsapp"></i>
+                <nav aria-label="Redes sociales">
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                                class="footer-link">GitHub</a>
+                        </li>
+                        <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"
+                                class="footer-link">LinkedIn</a></li>
+                        <li><a href="mailto:valeria@email.com" class="footer-link">Email</a></li>
+                    </ul>
+                    <p class="rights">© IrinaThDev 2026. Todos los derechos reservados.</p>
+
+            </footer>
 </body>
 
 </html>
