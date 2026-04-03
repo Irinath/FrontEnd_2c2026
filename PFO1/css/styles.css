@@ -1,1 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Fuzzy+Bubbles:wght@400;700&family=Spinnaker&display=swap');
+
+:root {
+    --text: #020609;
+--background: #e3f3ff;
+--primary: #2d97d8;
+--secondary: #e988ca;
+--accent: #e26962;
+
+}
+
+
+/*--linearPrimarySecondary: linear-gradient(#2d97d8, #e988ca);
+--linearPrimaryAccent: linear-gradient(#2d97d8, #e26962);
+--linearSecondaryAccent: linear-gradient(#e988ca, #e26962);
+--radialPrimarySecondary: radial-gradient(#2d97d8, #e988ca);
+--radialPrimaryAccent: radial-gradient(#2d97d8, #e26962);
+--radialSecondaryAccent: radial-gradient(#e988ca, #e26962);*/
+
